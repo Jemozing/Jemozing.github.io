@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Мой город</title>
+  <style>
+  :root {
+    --main-blue: rgb(72, 188, 255);
+    --main-fon: #b0ebeb;
+    --main-red: rgb(255, 119, 119);
+    --main-grey: rgb(190, 190, 190);
+}
+
+body {
+    margin: 0%;
+} 
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0%;
+    width: 100%;
+    height: 120px;
+    background: var(--main-fon);
+    box-shadow: 0px 3px 4px #93dbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header p {
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+	color
+    background-color: #759c9c;
+    color: #000000;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+.row {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.discription {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
+}
+.cell {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    margin: 0 20px;
+    border-radius: 25px;
+    box-shadow: grey 1px 1px 5px;
+    transition: box-shadow ease 0.25s, transform ease 0.25s;
+    background: var(--main-fon);
+}
+.cell::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.photoCell {
+    height: 450px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.wide {
+    width: 700px;
+    grid-template-rows: auto;
+    grid-template-columns: 350px 350px;
+}
+.photo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20px 0 0;
+}
+.text {
+font-size: 26px;
+}
+  </style>
+ </head>
+ <body>
+   <header><p>Почетные граждане</p></header>
+   
+   <div class="row">
+   <div class="cell photoCell">
+    <div class="photo" style="background-image: url(tulupova.jpg);"></div>
+                        <div class="discription">
+                            <p>Тулупова<br>Валентина Яковлевна</p>
+                            <p>(1914–2003)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Главный балетмейстер музыкального театра, заслуженный деятель культуры РСФСР, награждена  двумя орденами Трудового Красного знамени, орденом Отечественной войны 1 степени и медалями.</p>
+    <p>Звание присвоено постановлением главы администрации города Омска от 05.11.93 № 988-п.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+    <div class="photo" style="background-image: url(manyakin.jpg);"></div>
+                        <div class="discription">
+                            <p>Манякин<br>Сергей Иосифович</p>
+                            <p>(1923–2010)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Первый секретарь обкома КПСС, депутат Государственной Думы,  Герой Соц.труда, награжден орденами Ленина, Октябрьской революции, Трудового Красного Знамени, Отечественной войны 1 степени и медалями.</p>
+                <p>Звание присвоено постановлением главы администрации города Омска от 05.11.93 № 988-п.</p>
+    </div>
+	</div>
+   </div>
+   
+    <div class="row">
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Председатель горисполкома; президент АОЗТ «Омский торговый дом», награжден орденами Трудового Красного знамени, Дружбы народов, Знаком Почета, медалью «Заслуженный строитель РСФСР».</p>
+                <p>Звание присвоено решением городского Совета от 17.07.96 № 226.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+    <div class="photo" style="background-image: url(glebov.jpg);"></div>
+                        <div class="discription">
+                            <p>Глебов<br>Юрий Яковлевич</p>
+                            <p>(1930 — 2017)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Профессор кафедры хирургии № 1 Омской государственной медицинской академии, действительный член Академии медицинских наук, доктор медицинских наук, профессор, награжден орденом Ленина, Знаком Почета, медалями.</p>
+                <p>Звание присвоено решением городского Совета от 17.07.96 № 226.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+   <div class="photo" style="background-image: url(poluektov.jpg);"></div>
+                        <div class="discription">
+                            <p>Полуэктов<br>Леонид Васильевич</p>
+                            <p>(1927– 2004)</p>
+                        </div>
+	</div>
+   </div>
+   
+   <div class="row">
+    <div class="cell photoCell"">
+                        <div class="photo" style="background-image: url(sitnikov.jpg);"></div>
+                        <div class="discription">
+                            <p>Ситников<br>Алексей Михайлович</p>
+                            <p>(1925–2005)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Профессор кафедры земледелия Омского государственного аграрного университета, доктор сельскохозяйственных наук, Герой Советского Союза, награжден орденом Ленина, медалями «За отвагу».</p>
+                <p>Звание присвоено решением городского Совета от 07.07.99 № 178.</p>
+    </div>
+	</div>
+    <div class="cell photoCell">
+                        <div class="photo" style="background-image: url(pletnev.jpg);"></div>
+                        <div class="discription">
+                            <p>Плетнев<br>Александр Ефимович</p>
+                            <p>(1921–2006)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Председатель Омского областного Совета ветеранов войны, труда, Вооруженных сил и правоохранительных органов, награжден орденами Красной Звезды, Великой Отечественной войны 1 и 2 степени.</p>
+                <p>Звание присвоено решением городского Совета от 07.07.99 № 178.</p>
+    </div>
+	</div>
+   </div>
+   
+   <div class="row">
+	<div class="cell wide">
+	<div class="discription text">
+   <p>Генеральный директор ПО «Омскшина», Герой Социалистического труда, награжден орденами Ленина, Октябрьской революции, Александра Невского, Трудового Красного Знамени, Великой Отечественной войны 1 степени, заслуженный химик РСФСР.</p>
+                <p>Звание присвоено решением городского Совета от 07.07.99 № 178.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+                        <div class="photo" style="background-image: url(buderkin.jpg);"></div>
+                        <div class="discription">
+                            <p>Будеркин<br>Петр Васильевич</p>
+                            <p>(1924–2004)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Заведующий  кафедрой ИЗО ОГПИ, народный художник РСФСР, лауреат Госпремии РСФСР им. Репина, член-корреспондент академии художеств России, заслуженный деятель искусств России, профессор живописи, ветеран Великой Отечественной войны.</p>
+                <p>Звание присвоено решением городского Совета от 07.07.99 № 178.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+                        <div class="photo" style="background-image: url(loberov.jpg);"></div>
+                        <div class="discription">
+                            <p>Либеров<br>Алексей Николаевич</p>
+                            <p>(1911–2001)</p>
+                        </div>
+	</div>
+   </div>
+   
+   <div class="row">
+    <div class="cell photoCell">
+                        <div class="photo" style="background-image: url(ivanova.jpg);"></div>
+                        <div class="discription">
+                            <p>Иванова<br>Ираида Трофимовна</p>
+                            <p>(1919–2002)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+   <p>Бывший главный хормейстер Омского русского народного хора, художественный руководитель хора ветеранов войны, труда и любителей пения, заслуженная артистка РСФСР, лауреат госпремии им. М.И.Глинки, награждена 7 медалями.</p>
+                <p>Звание присвоено решением городского Совета от 19.07.2000 № 296.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+                        <div class="photo" style="background-image: url(kononov.jpg);"></div>
+                        <div class="discription">
+                            <p>Кононов<br>Бронислав Ильич</p>
+                            <p>(1937 -2017)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Генеральный директор ОАО «Строительный трест №1», Заслуженный строитель РСФСР, Почетный строитель России, награжден орденом Трудового Красного знамени, орденом Дружбы, орденом «Знак Почета». Принимал участие в строительстве объектов: ОАО «Омскшина», ОАО «Омский каучук», ООСП Торговый центр «Омский», ГУК «Омский государственный цирк» и др.</p>
+                <p>Звание присвоено решением городского Совета от 19.07.2000 № 296</p>
+    </div>
+	</div>
+	
+   </div>
+   
+   <div class="row">
+	<div class="cell wide">
+	<div class="discription text">
+    <p>Трехкратный чемпион мира, двукратный чемпион Европы, победитель Кубка Мира, девятикратный чемпион страны, Заслуженный мастер спорта, председатель омской федерации самбо и дзюдо, вице-президент Всемирной федерации самбо.</p>
+                <p>Звание присвоено решением городского Совета от 19.07.2000 № 296.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+                        <div class="photo" style="background-image: url(pushnica.jpg);"></div>
+                        <div class="discription">
+                            <p>Пушница<br>Александр Михайлович</p>
+                            <p>(1949 г.р.)</p>
+                        </div>
+	</div>
+	<div class="cell wide">
+	<div class="discription text">
+     <p>Генеральный директор производственного хлопчатобумажного объединения «Восток», заслуженный работник текстильной и легкой промышленности, награжден орденом  Ленина, двумя орденами Трудового Красного Знамени, орденами «Знак почета» и «Дружбы народов», орденом Отечественной войны второй степени, 13-тью медалями. Избирался депутатом городского Совета.</p>
+                <p>Звание присвоено решением городского Совета от 25.07.2001 № 402.</p>
+    </div>
+	</div>
+	<div class="cell photoCell">
+                        <div class="photo" style="background-image: url(podkovka.jpg);"></div>
+                        <div class="discription">
+                            <p>Подковка<br>Иван Ильич</p>
+                            <p>(1922–2002)</p>
+                        </div>
+	</div>
+   </div>
+ 
+ </body>
+</html>

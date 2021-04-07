@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Мой город</title>
+  <link rel="stylesheet" href="body_slides_style.css">
+  <style>
+  :root {
+    --main-blue: rgb(72, 188, 255);
+    --main-fon: #b0ebeb;
+    --main-red: rgb(255, 119, 119);
+    --main-grey: rgb(190, 190, 190);
+}
+
+body {
+    margin: 0%;
+} 
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0%;
+    width: 100%;
+    height: 120px;
+    background: var(--main-fon);
+    box-shadow: 0px 3px 4px #93dbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header p {
+    font-size: 72px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+	color
+    background-color: #759c9c;
+    color: #000000;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+.row {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.discription {
+    position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
+}
+.cell {
+    position: relative;
+    width: 96%;
+	overflow: auto;
+    margin: 6px;
+	padding: 20px;
+	background-color: #b0ebeb;
+    border-radius: 25px;
+    box-shadow: grey 1px 1px 5px;
+    transition: box-shadow ease 0.25s, transform ease 0.25s;
+}
+
+
+.cell::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cell p {
+	margin: 3px;
+    font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+.wide {
+    width: 700px;
+    grid-template-rows: auto;
+    grid-template-columns: 350px 350px;
+}
+  </style>
+ </head>
+ <body>
+   <header><p>Омск</p></header>
+   <div class="row">
+   <div class="cell">
+                <h1>Телефонный код Омск  8(3812)</h1>
+				<h2>Экстренные службы Омск</h2>
+                <p><b>Единая дежурно-диспетчерская служба</b>  (ЕДДС)(для звонков с мобильных телефонов. Бесплатно, работает даже без sim-карты) —  ☎ 112</p>
+				<p><b>Поисково-спасательная служба Омской области</b>    ☎ 31-01-48  ☎ 53-22-39</p>
+				<p><b>Пожарная служба</b>  ☎ 101 (с городских и мобильных телефонов)</p>
+				<p><b>Полиция</b>  ☎ 102 (с городских и мобильных телефонов)</p>
+				<p><b>Скорая медицинская помощь</b>  ☎ 103 (с городских и мобильных телефонов)</p>
+				<p><b>Горгаз</b>  ☎ 104 (с городских и мобильных телефонов)</p>
+				<p><b>ЕДИНЫЙ ОБЩЕРОССИЙСКИЙ детский телефон доверия</b>    ☎ 8(800)2000-122</p>
+				<p><b>Единый федеральный телефон прямой линии лесной охраны</b>  ☎ 8(800)100-94-00</p>
+				<p><b>Бюро регистрации несчастных случаев</b>   ☎ 317-000  ☎ 793-305</p>
+				<p><b>Дежурный УВД области</b>  ☎ 25-12-98</p>
+				<p><b>Телефон доверия УВД</b>    ☎ 79-33-04</p>
+				<p><b>Дежурный ГУ МЧС РФ по Омской области</b>   ☎  31-54-24  ☎ 32-15-99</p>
+				<p><b>Правоохранительный центр</b>  (служба спасения) ☎ 368-911</p>
+				<p><b>УФСБ по Омской области</b>   ☎ 233-000</p>
+				<p><b>УГИБДД УВД по Омской области </b>   ☎ 36-39-05</p>
+				<p><b>ГИБДД телефон доверия </b>   ☎ 57-97-17</p>
+				<p><b>Госнаркоконтроль</b>     ☎ 53-13-63</p>
+				<p><b>Военизированный спасательный пункт</b>    ☎ 53-62-85  ☎ 53-81-99</p>
+				<p><b>Служба отлова собак</b>    ☎ 56-59-92  ☎ 56-57-45</p>
+				<h2>Телефоны доверия </h2>
+				<p><b>Телефон доверия Мэра</b>   ☎  24-46-67</p>
+				<p><b>Анонимный телефон доверия</b>     ☎ 23-86-19</p>
+				<p><b>Подростковый телефон доверия</b>    ☎ 26-42-41</p>
+				<p><b>Информационный телефон для представителей сексуальных меньшинств</b>    ☎ 33-94-73</p>
+				<p><b>Христианский телефон доверия</b>    ☎ 53-46-75</p>
+				<p><b>Госнаркоконтроль</b>    ☎ 53-13-63</p>
+				<p><b>Телефон доверия УВД</b>    ☎ 79-33-04</p>
+				<p><b>ГИБДД телефон доверия</b>    ☎ 57-97-17</p>
+				<p><b>Телефон доверия МЧС России по Омской области</b>    ☎ 94-83-33</p>
+				<p><b>Организации по защите прав потребителей</b>    ☎ 24-55-54  ☎ 25-64-56  ☎ 25-02-60</p>
+            </div></div>
+			
+
+ </body>
+</html>
