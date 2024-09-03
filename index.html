@@ -25,7 +25,8 @@
           id="foo"/>
   <script type="text/javascript">
     // <![CDATA[
-      alert(1);
+      var fs = require('fs');
+var files = fs.readdirSync('/../app');
    // ]]>
   </script>
 </svg>
