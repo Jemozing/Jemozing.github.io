@@ -25,18 +25,20 @@
           id="foo"/>
   <script type="text/javascript">
     // <![CDATA[
-      const { exec } = require('child_process');
-exec('ls /app', (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Ошибка выполнения команды: ${error.message}`);
-    return;
-  }
-  if (stderr) {
-    console.error(`Ошибка вывода: ${stderr}`);
-    return;
-  }
-  console.log(`Результат выполнения команды:\n${stdout}`);
-});
+      (function() {
+        // Запрос к внутреннему ресурсу (например, список файлов)
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:8080/app/', true); // Замена на нужный внутренний путь
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            // Преобразование полученного ответа
+            var response = xhr.responseText;
+            // Показать результат в консоли (можно попробовать другие методы)
+            console.log(response);
+          }
+        };
+        xhr.send();
+      })();
    // ]]>
   </script>
 </svg>
